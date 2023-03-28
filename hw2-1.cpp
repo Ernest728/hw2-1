@@ -21,8 +21,7 @@ int main()
     while (true) {
         for (int j = 0; j < 20; j++) {
             PWM1.pulsewidth_us(Re[j]);
-            wait_us(46500);
+            ThisThread::sleep_for(50ms);
         }
     }
 }
-
